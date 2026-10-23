@@ -773,3 +773,19 @@ a {
     gap: 16px;
   }
 }
+
+/* Brand Logo Image */
+.brand-logo-img {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 14px rgba(52, 211, 153, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block;
+}
+
+.brand-logo:hover .brand-logo-img {
+  transform: scale(1.06);
+  box-shadow: 0 0 20px rgba(52, 211, 153, 0.45);
+}
