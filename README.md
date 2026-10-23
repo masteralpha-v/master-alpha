@@ -1,4 +1,4 @@
-# Master Alpha
+# Master Alpha — Official Advanced Trading Ecosystem
 
 Official public ecosystem and website for **Master Alpha Ltd.** and **Master Journal**.
 
