@@ -7,7 +7,7 @@
   <title>Master Alpha — Official Advanced Trading Ecosystem</title>
   <meta name="description" content="Master Alpha is a premier trading technology suite. Featuring Master Journal: institutional-grade desktop trading analytics with private Google Drive synchronization.">
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -94,6 +94,80 @@
         <div class="matrix-pill">Rule Adherence Index</div>
       </div>
     </div>
+
+    <!-- Interactive App Showcase Slider -->
+    <div class="app-slider-container">
+      <div class="window-frame">
+        <div class="window-header">
+          <div class="window-dots">
+            <span class="dot dot-close"></span>
+            <span class="dot dot-minimize"></span>
+            <span class="dot dot-maximize"></span>
+          </div>
+          <div class="window-title">Master Journal Desktop — Institutional Execution Suite</div>
+          <div class="window-actions">
+            <span class="window-badge">Local-First</span>
+          </div>
+        </div>
+
+        <div class="slider-viewport" id="appSliderViewport">
+          <!-- Slide 1: Analytics -->
+          <div class="slider-slide active" data-index="0">
+            <img src="images/preview-analytics.png" alt="Master Journal Performance Analytics & Equity Curve" class="slide-img">
+            <div class="slide-overlay">
+              <span class="slide-tag">ANALYTICS & EQUITY CURVE</span>
+              <h4>Dynamic Performance Matrix & Risk Engine</h4>
+              <p>Real-time P&L, Win Rate expectancy, Position Size calculator, and equity peak drawdowns.</p>
+            </div>
+          </div>
+
+          <!-- Slide 2: Journal -->
+          <div class="slider-slide" data-index="1">
+            <img src="images/preview-journal.png" alt="Master Journal Multi-Column Trade Execution Grid" class="slide-img">
+            <div class="slide-overlay">
+              <span class="slide-tag">TRADE JOURNAL MATRIX</span>
+              <h4>Comprehensive Multi-Market Trade Logs</h4>
+              <p>Log trades with segment type, ROI %, capital risk %, psychological karma, and sector categorization.</p>
+            </div>
+          </div>
+
+          <!-- Slide 3: Gallery -->
+          <div class="slider-slide" data-index="2">
+            <img src="images/preview-gallery.png" alt="Master Journal Technical Setup & Chart Gallery" class="slide-img">
+            <div class="slide-overlay">
+              <span class="slide-tag">TECHNICAL SETUP GALLERY</span>
+              <h4>High-Resolution Chart Annotations & Review</h4>
+              <p>Visual trade attachments, emotional mistake tracking, and setup screenshot archives.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-btn slider-btn-prev" id="sliderPrevBtn" aria-label="Previous Slide">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="slider-btn slider-btn-next" id="sliderNextBtn" aria-label="Next Slide">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <!-- Slide Selector Tabs (Bottom Pills) -->
+      <div class="slider-nav-tabs" id="sliderNavTabs">
+        <button class="slider-tab active" data-slide="0">
+          <span class="tab-icon">📈</span>
+          <span>Analytics & Equity</span>
+        </button>
+        <button class="slider-tab" data-slide="1">
+          <span class="tab-icon">📓</span>
+          <span>Journal Matrix</span>
+        </button>
+        <button class="slider-tab" data-slide="2">
+          <span class="tab-icon">🖼️</span>
+          <span>Chart Gallery</span>
+        </button>
+      </div>
+    </div>
+
 
     <div class="grid-3">
       <div class="card">
@@ -249,6 +323,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js?v=2"></script>
 </body>
 </html>
