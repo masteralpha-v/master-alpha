@@ -244,7 +244,38 @@ a {
   align-items: center;
   justify-content: center;
   gap: 14px;
-  margin-bottom: 50px;
+  margin-bottom: 16px;
+}
+
+.hero-platform-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-dim);
+  margin-bottom: 46px;
+}
+
+.hero-platform-links span {
+  color: var(--text-muted);
+}
+
+.hero-platform-links a {
+  color: var(--color-profit);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: opacity 0.15s ease;
+}
+
+.hero-platform-links a:hover {
+  opacity: 0.8;
+}
+
+.hero-platform-links .dot {
+  color: var(--border-hover);
 }
 
 .btn-primary {

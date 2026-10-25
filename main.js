@@ -98,4 +98,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     startAutoPlay();
   }
+
+  // Smart OS Detection for Download Buttons
+  const downloadBtn = document.getElementById('hero-download-btn');
+  const downloadLabel = document.getElementById('hero-download-label');
+
+  if (downloadBtn && downloadLabel) {
+    const userAgent = navigator.userAgent;
+    const GITHUB_DOWNLOAD = 'https://github.com/masteralpha-v/master-journal-releases/releases/latest/download';
+
+    if (userAgent.includes('Win')) {
+      downloadBtn.href = GITHUB_DOWNLOAD + '/master-journal-windows-amd64.exe';
+      downloadLabel.textContent = 'Download for Windows (.exe)';
+    } else if (userAgent.includes('Linux')) {
+      downloadBtn.href = GITHUB_DOWNLOAD + '/master-journal-linux-amd64';
+      downloadLabel.textContent = 'Download for Linux (x64)';
+    } else {
+      downloadBtn.href = 'https://github.com/masteralpha-v/master-journal-releases/releases/latest';
+      downloadLabel.textContent = 'Download Master Journal';
+    }
+  }
 });
