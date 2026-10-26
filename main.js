@@ -111,8 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
       downloadBtn.href = GITHUB_DOWNLOAD + '/master-journal-windows-amd64.exe';
       downloadLabel.textContent = 'Download for Windows (.exe)';
     } else if (userAgent.includes('Linux')) {
-      downloadBtn.href = GITHUB_DOWNLOAD + '/master-journal-linux-amd64';
-      downloadLabel.textContent = 'Download for Linux (x64)';
+      downloadBtn.href = GITHUB_DOWNLOAD + '/master-journal-linux-amd64.deb';
+      downloadLabel.textContent = 'Download for Linux (.deb)';
     } else {
       downloadBtn.href = 'https://github.com/masteralpha-v/master-journal-releases/releases/latest';
       downloadLabel.textContent = 'Download Master Journal';
