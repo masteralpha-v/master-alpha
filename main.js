@@ -108,11 +108,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const GITHUB_DOWNLOAD = 'https://github.com/masteralpha-v/master-journal-releases/releases/latest/download';
 
     if (userAgent.includes('Win')) {
-      downloadBtn.href = GITHUB_DOWNLOAD + '/master-journal-windows-amd64.exe';
+      downloadBtn.href = GITHUB_DOWNLOAD + '/MasterJournal.exe';
       downloadLabel.textContent = 'Download for Windows (.exe)';
+    } else if (userAgent.includes('Mac')) {
+      downloadBtn.href = GITHUB_DOWNLOAD + '/MasterJournal.dmg';
+      downloadLabel.textContent = 'Download for macOS (.dmg)';
     } else if (userAgent.includes('Linux')) {
-      downloadBtn.href = GITHUB_DOWNLOAD + '/master-journal-linux-amd64';
-      downloadLabel.textContent = 'Download for Linux (Smart Setup)';
+      downloadBtn.href = GITHUB_DOWNLOAD + '/MasterJournal.AppImage';
+      downloadLabel.textContent = 'Download for Linux (.AppImage)';
     } else {
       downloadBtn.href = 'https://github.com/masteralpha-v/master-journal-releases/releases/latest';
       downloadLabel.textContent = 'Download Master Journal';
