@@ -99,29 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoPlay();
   }
 
-  // Smart OS Detection for Download Buttons
-  const downloadBtn = document.getElementById('hero-download-btn');
-  const downloadLabel = document.getElementById('hero-download-label');
-
-  if (downloadBtn && downloadLabel) {
-    const userAgent = navigator.userAgent;
-    const GITHUB_DOWNLOAD = 'https://github.com/masteralpha-v/master-alpha/releases/latest/download';
-
-    if (userAgent.includes('Win')) {
-      downloadBtn.href = GITHUB_DOWNLOAD + '/MasterJournal.exe';
-      downloadLabel.textContent = 'Download Windows Portable App';
-    } else if (userAgent.includes('Mac')) {
-      downloadBtn.href = GITHUB_DOWNLOAD + '/MasterJournal.dmg';
-      downloadLabel.textContent = 'Download macOS Portable App';
-    } else if (userAgent.includes('Linux')) {
-      downloadBtn.href = GITHUB_DOWNLOAD + '/MasterJournal.AppImage';
-      downloadLabel.textContent = 'Download Linux Portable App';
-    } else {
-      downloadBtn.href = GITHUB_DOWNLOAD + '/MasterJournal.exe';
-      downloadLabel.textContent = 'Download Master Journal Portable';
-    }
-  }
-
   // Dynamic Card Recommendation based on OS
   const cardWin = document.getElementById('card-windows');
   const cardLinux = document.getElementById('card-linux');
