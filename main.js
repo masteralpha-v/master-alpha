@@ -121,4 +121,25 @@ document.addEventListener('DOMContentLoaded', () => {
       downloadLabel.textContent = 'Download Master Journal Portable';
     }
   }
+
+  // Dynamic Card Recommendation based on OS
+  const cardWin = document.getElementById('card-windows');
+  const cardLinux = document.getElementById('card-linux');
+  const tagWin = document.getElementById('tag-windows');
+  const tagLinux = document.getElementById('tag-linux');
+
+  if (cardWin && cardLinux) {
+    const userAgent = navigator.userAgent;
+    if (userAgent.includes('Linux')) {
+      cardLinux.classList.add('featured');
+      cardWin.classList.remove('featured');
+      if (tagLinux) tagLinux.textContent = 'Recommended for Linux';
+      if (tagWin) tagWin.textContent = 'Windows Executable';
+    } else {
+      cardWin.classList.add('featured');
+      cardLinux.classList.remove('featured');
+      if (tagWin) tagWin.textContent = 'Recommended for Windows';
+      if (tagLinux) tagLinux.textContent = 'Linux AppImage';
+    }
+  }
 });
