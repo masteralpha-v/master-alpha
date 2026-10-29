@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (downloadBtn && downloadLabel) {
     const userAgent = navigator.userAgent;
-    const GITHUB_DOWNLOAD = 'https://github.com/masteralpha-v/master-journal-releases/releases/latest/download';
+    const GITHUB_DOWNLOAD = 'https://github.com/masteralpha-v/master-alpha/releases/latest/download';
 
     if (userAgent.includes('Win')) {
       downloadBtn.href = GITHUB_DOWNLOAD + '/MasterJournal.exe';
