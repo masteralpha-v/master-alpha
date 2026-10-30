@@ -111,12 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
       cardLinux.classList.add('featured');
       cardWin.classList.remove('featured');
       if (tagLinux) tagLinux.textContent = 'Recommended for Linux';
-      if (tagWin) tagWin.textContent = 'Windows Executable';
+      if (tagWin) tagWin.textContent = 'Windows Setup';
     } else {
       cardWin.classList.add('featured');
       cardLinux.classList.remove('featured');
       if (tagWin) tagWin.textContent = 'Recommended for Windows';
-      if (tagLinux) tagLinux.textContent = 'Linux AppImage';
+      if (tagLinux) tagLinux.textContent = 'Linux Debian Package';
     }
   }
 });
